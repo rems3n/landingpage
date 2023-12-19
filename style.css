@@ -24,12 +24,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
     background-color: #1F2937;
-    padding: 20px 100px 20px 100px;
+    padding: 20px 200px 0px 200px;
 }
 
 h1 {
     font-size: 48px;
     font-weight: extra-bold;
+    line-height: 1em;
 }
 
 h2 {
@@ -41,7 +42,8 @@ h2 {
 .one {  
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-content: center;
     padding: 50px 200px 50px 200px;
     background-color: #1F2937;
     color: #F9FAF8;
@@ -59,7 +61,7 @@ h2 {
 }
 .three {
     background-color: #E5E7EB; 
-    padding: 100px 200px 100px 200px;
+    padding: 100px 400px 100px 400px;
  }
 
 .quote {
@@ -78,13 +80,22 @@ h2 {
 button {
     color: white;
     font-weight: bold;
-    border: white solid;
+    border: none;
     background-color: #3882f6;
-    border-radius: 10%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button.border {
+    border: white solid;
 }
 
 footer {  
     background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     padding: 50px 200px 50px 200px;
 }
 
@@ -94,4 +105,20 @@ footer {
     justify-content: center; /* Horizontally center the content */
     align-items: center;
     padding: 10px 20px 10px 20px;
+}
+
+.bluebox {
+    background-color: #3882f6;
+    padding: 10px;
+    width: 60%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #9fbef0;
 }
