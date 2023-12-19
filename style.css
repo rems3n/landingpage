@@ -1,1 +1,120 @@
-/* This is my css file for the landing page */
+/* This is my css file for the landing page 
+colors and font styles
+
+dark background color (hero and footer)
+#1F2937
+
+Hero Main text (“this website is awesome”)
+48px extra-bold #F9FAF8
+
+Hero Secondary text, Header Link Text
+18px #E5E7EB
+
+Header Logo Text
+24px #F9FAF8
+
+Button color, call to action background color
+#3882F6
+
+information header text
+36px extra-bold #1F2937
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+nav a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Sets text color to black */
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: rgb(174, 211, 240); /* Changes text color on hover */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1F2937;
+    padding: 20px 100px 20px 100px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1F2937;
+}
+
+.one {  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 200px 50px 200px;
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.two {  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 200px 50px 200px;
+    background-color: #F9FAF8;
+    color: black;
+
+}
+.three {
+    background-color: #E5E7EB; 
+    padding: 100px 200px 100px 200px;
+ }
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.list { 
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    border: white solid;
+    background-color: #3882f6;
+    border-radius: 10%;
+}
+
+footer {  
+    background-color: #1F2937;
+    padding: 50px 200px 50px 200px;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
